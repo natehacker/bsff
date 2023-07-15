@@ -1,0 +1,720 @@
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title></title>
+<meta name="description" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<script src="https://kit.fontawesome.com/b5ec3bd5fd.js" crossorigin="anonymous"></script>
+
+<style>
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: Arial, Helvetica, sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* End of CSS Reset Code */
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #003479;
+    
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #003479;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #555;
+    padding-bottom: 15px;
+}
+
+.main-container {
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.intro-paras {
+    padding: 0px 18px;
+}
+
+
+.intro-paras p {
+    line-height: 1.75em;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: left;
+}
+
+
+.intro-paras li {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.75em;
+    color: #555;
+    
+}
+
+.intro-paras ul {
+    padding: 0px 100px;
+}
+
+.full-report p {
+    line-height: 1.75em;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    color: #555;
+    text-align: left;
+}
+
+.individual-highlights p {
+    line-height: 1.75em;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    color: #555;
+    text-align: left;
+}
+
+.table-text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 1.2em;
+
+}
+.letter-headline {
+    background-color: #f1f1f1;
+    padding: 30px;
+}
+
+ .btn-linked {
+     border-radius: 8px;
+     padding: 25px;
+     background-color: #639ec8;
+     border: none;
+     color: #fff;
+     font-size: 1.2em;
+     font-weight: bold;
+     cursor: pointer;
+     
+ }
+
+ .btn-linked:hover {
+  
+  background-color: #003479;
+
+  
+}
+
+ .btn-linked-v2 {
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #639ec8;
+  border: none;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-linked-v3 {
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #639ec8;
+  border: none;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-linked-v2:hover {
+  background-color: #003479;
+}
+
+.btn-unique {
+  width: 49%;
+}
+
+ .btn-linked-v2 i {
+     padding-right: 15px;
+ }
+
+ .btn-linked-v3 i {
+     padding-left: 15px;
+ }
+  
+ a {
+   text-decoration: none;
+ }
+
+  .odd-list-item:hover {
+  background-color: #003479;
+  cursor: pointer;
+ }
+
+ .even-list-item:hover {
+  background-color: #003479;
+  cursor: pointer;
+ }
+
+ .odd-list-item button {
+   margin-right: 15px;
+ }
+
+ 
+.odd-list-item {
+  background-color: #639ec8;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 1.2em;
+}
+
+.even-list-item {
+  background-color: #555;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 1.2em;
+}
+
+.letters-list {
+  margin-bottom: 25px;
+}
+
+.two-col-container {
+   display: flex;
+   margin-bottom: 15px;
+}
+
+.full-report {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 18px;
+  
+}
+
+.individual-highlights {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 18px;
+}
+
+.letter-headline h2 {
+  text-align: center;
+}
+
+
+/* Quick Links Button Styles */
+
+.dropbtn {
+              background-color:  #003479;
+              color: white;
+              padding: 60px;
+              font-size: 1.2em;
+              border: none;
+              cursor: pointer;
+              border-radius: 8px;
+              margin-right: 15px;
+              font-weight: bold;
+              width: 30%;
+            }
+
+            .dropbtn-v2 {
+                width: 96%;
+            }
+            
+            .dropbtn:hover, .dropbtn:focus {
+              background-color: #639ec8;
+            }
+            
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+
+            .dropbtn i {
+              display: block;
+              margin-bottom: 15px;
+            }
+            
+            .dropdown-content {
+                
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 19%;
+                overflow: auto;
+                box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+                z-index: 1;
+                
+            }
+            
+            .dropdown-content a {
+              color: #555;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold;
+              
+            }
+
+            .dropdown-content li {
+                list-style-type: none;
+                text-align: center;
+            }
+            
+            .dropdown a:hover {background-color: #ddd;}
+            
+            .show {
+                display: flex;
+                flex-direction: column;
+                width: 34%;
+                
+            }
+
+            .secondary-nav {
+                max-width: 1190px;
+                margin-bottom: 35px;
+            }
+
+            .secondary-nav-inner {
+                display: flex;
+                justify-content: center;
+                
+            }
+
+            .show a:hover {
+                color: #fff;
+                background-color: #003479;
+            }
+
+            .three-buckets {
+                margin-bottom: 50px;
+            }
+            
+            .anchor-override a {
+                color: #fff;
+            }
+            
+            .anchor-override a:hover {
+                color: #fff;
+            }
+
+/* End of Quick Links Button Styles */
+
+/* Table Styles */
+
+.table-styles table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+ .table-styles th { 
+    background-color: #f1f1f1;
+    padding: 25px; 
+    color: #003479;
+    font-weight: bold; 
+    border: none; 
+    text-align: center; 
+    font-size: 1.7em;
+  }
+
+ .table-styles td { 
+    padding: 40px; 
+    border: 1px solid #ccc; 
+    text-align: center; 
+    width: 50%;
+    line-height: 1.5em;
+    
+  }
+
+  table tr:first-child td {
+    border-top: 0;
+  }
+  table tr td:first-child {
+    border-left: 0;
+  }
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+  table tr td:last-child {
+    border-right: 0;
+  }
+
+ 
+/* End of Table Styles */
+
+
+/* End of responsive CSS rules */
+
+@media only screen and (max-width: 800px) {
+  
+
+  .main-container {
+    display: table;
+    width: 90%;
+    padding: 0px 45px;
+  }
+
+  .main-container > .inner-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .intro-paras p {
+    padding: 0px 40px;
+    
+}
+
+.headline-spacing {
+    padding: 0px 18px;
+}
+
+
+  .banner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-bottom: 35px;
+    
+    
+}
+
+.two-col-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-report {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.individual-highlights {
+  width: 100%;
+}
+
+.secondary-nav-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropbtn {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.dropbtn-v2 {
+    width: 98%;
+}
+
+}
+
+
+/* Beginning of media < 500px */
+
+@media only screen and (max-width: 500px) {
+  .btn-unique {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  
+ .main-container {
+    width: 100%;
+  }
+
+  .intro-paras p {
+    padding: 0px;
+    font-size: 1em;
+  }
+
+  .btn-linked {
+    width: 100%;
+    font-size: 1em;
+  }
+  
+   .btn-linked-v2 {
+    font-size: 1em;
+    
+  }
+  
+  h2 {
+      font-size: 1.2em;
+  }
+
+}
+
+
+/* End of media < 500px */
+</style>
+
+
+
+
+<div class="main-container">
+
+    <div class="inner-container">
+
+        <!-- <div class="banner">
+            <img src="https://www.cste.org/resource/resmgr/images5/DE2H_v3.jpg" alt="Data: Elemental to Health" width="100%" />
+
+        </div> -->
+        <!---End of Banner-->
+
+        <!----Beginning of Background Section----->
+
+        <div class="letter-headline">
+
+            <h2>Occupational Health: BRFSS</h2>
+
+        </div>
+        <!--- End of letter-headline-->
+
+        <br />
+
+        <div class="fastlane-section">
+            <div class="two-col-container">
+
+                <div class="full-report">
+
+
+                    <h4><u>Background</u></h4>
+                    <p>
+
+                        National information on workers’ health status, health risk behaviors, and the prevalence of workplace injuries and illnesses is incomplete and underreported. The National Institute for Occupational Safety and Health (NIOSH) has funded the addition of
+                        industry and occupation (I/O) questions to the Behavioral Risk Factor Surveillance System (BRFSS) for survey years 2013-2016. States vote to add I/O as an Optional Module which allows state BRFSS programs flexibility to opt in
+                        to include I/O information in their state’s survey. Collecting I/O information provides an opportunity to collect population-based health status and health behavior data on workers to measure progress toward state and national
+                        health objectives.
+
+                    </p>
+                </div>
+                <!---End of Full-Report-->
+
+                <div class="individual-highlights">
+
+                    <img src="https://www.cste.org/resource/resmgr/occupationalhealth/oh-BRFSS-image.png" alt="Construction Site" />
+
+                </div>
+                <!---End of Full-Report-->
+
+            </div>
+            <!----End of Two-Col-Container-->
+            <div class="intro-paras">
+                <h4 class="headline-spacing"><u>Value-Added</u></h4>
+                <p>
+                    With the addition of these important variables, specific indicators of health can be cross-tabulated to identify high-risk subpopulations of workers in your state. These include demographic information, household income, education level, health status
+                    (self-rated), life satisfaction (self-rated), asthma (ever diagnosed), cardiovascular disease (ever diagnosed), disability, body mass index, tobacco use (history and current use), alcohol consumption (# drinks per day past 30 days),
+                    exercise (outside of work, past month), sleep (days with insufficient amount, past month), seatbelt use (how often used), drinking and driving, falls, and immunization (flu vaccine, past 12 months).
+                </p>
+
+                <p>
+                    This provides a meaningful data source that improves state-based public health surveillance systems for the prevention of work-related injury and illness, allows for better understanding of work as a social determinant of health, including health disparities
+                    related to work, and provides a potential mechanism for early identification of emerging occupational diseases. States are encouraged to administer the optional I/O module and to leverage I/O with the addition of other questions about
+                    work-related conditions, exposures, or risk factors. NIOSH provides several resources for participating states, including interviewer training and resources, coding of data received through the optional module, and dissemination of
+                    resources to partners.
+                </p>
+
+            </div>
+            <!--- End of intro-paras-->
+
+
+            <div class="intro-paras">
+                <h4 class="headline-spacing"><u>BRFSS Questions</u></h4>
+                <p>
+                    The I/O questions are essentially the same as those on the National Health Interview Survey. Interviewers collect responses in open-ended text fields, and NIOSH staff codes the responses using the 2002 U.S. Census Bureau coding scheme. Click here to access
+                    approved questions for most recent BRFSS.
+
+                </p>
+
+                <a href="https://www.cdc.gov/brfss/questionnaires/pdf-ques/2020-BRFSS-Questionnaire-508.pdf" target="_blank" class="btn-linked-v2"><i class="fas fa-file-pdf"></i> View Behavioral Risk Factor Surveillance System Questionnaire </a>
+
+            </div>
+            <!--- End of intro-paras-->
+
+        </div>
+        <!---End of Fastlane-Section--->
+
+        <!----End of Background Section----->
+
+
+        <!----START OF Summary Section----->
+
+        <br />
+
+
+
+        <!------START OF BRFSS Resources------>
+
+        <div class="letter-headline">
+
+            <h2>BRFSS Resources</h2>
+
+        </div>
+        <!--- End of letter-headline-->
+
+
+        <div class="letters-list">
+            <ul>
+
+                <a href="https://www.cdc.gov/brfss/" target="_blank">
+                    <li class="even-list-item">
+
+                        Behavioral Risk Factor Surveillance System Website
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                </a>
+
+                <a href="https://www.cdc.gov/niosh/topics/surveillance/brfss/default.html" target="_blank">
+                    <li class="odd-list-item">
+
+                        NIOSH BRFSS industry and Occupation Website
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                </a>
+
+                <a href="mailto:brfssio@cdc.gov?subject=Request Access to NIOSH BRFSS Workgroup" target="_blank">
+                    <li class="even-list-item">
+
+                        NIOSH established a BRFSS workgroup and FTP site for file sharing and broader discussion. Request access here
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                </a>
+
+                <a href="https://www.cste.org/resource/resmgr/OccupationalHealth/Tips_for_BRFSS_Interviewers_.pdf" target="_blank">
+                    <li class="odd-list-item">
+
+                        BRFSS Interviewers: Tips for Obtaining Good Industry and Occupation Information
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                </a>
+
+                <a href="https://wwwn.cdc.gov/niosh-statedocs/" target="_blank">
+                    <li class="even-list-item">
+                        View the State Reports & Journal Articles
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                </a>
+
+                <a href="https://www.cdc.gov/niosh/topics/surveillance/brfss/tips.html" target="_blank">
+                    <li class="odd-list-item">
+                        Webinar Resources: Tips for BRFSS Interviewers
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                </a>
+
+                <a href="https://www.cdc.gov/niosh/topics/surveillance/brfss/publications.html" target="_blank">
+                    <li class="even-list-item">
+                        BRFSS Newsletter (Quarterly Publication): View the Publications and Related Resources
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                </a>
+
+                <a href="https://www.cdc.gov/niosh/topics/coding/collecting.html" target="_blank">
+                    <li class="odd-list-item">
+                        NAICS Coding Guidance (Groupings when Reporting Rates) Link #1
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                </a>
+
+                <a href="https://www.cdc.gov/niosh/topics/coding/more.html" target="_blank">
+                    <li class="even-list-item">
+                        NAICS Coding Guidance (Groupings when Reporting Rates) Link #2
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                </a>
+
+
+
+            </ul>
+
+        </div>
+        <!---- End of Letters-List-->
+
+        <!------END OF BRFSS Resources----->
+
+
+        <!------END OF Subcommittee Contact------>
+
+    </div>
+    <!----End of inner-container-->
+
+</div>
+<!---End of Main-Container-->
